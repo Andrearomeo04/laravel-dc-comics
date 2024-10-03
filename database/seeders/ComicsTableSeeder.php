@@ -14,6 +14,10 @@ class ComicsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        for($i=0; $i<6; $i++) {
+            $comic = config('comics');
+    
+            
+        }
     }
 }
