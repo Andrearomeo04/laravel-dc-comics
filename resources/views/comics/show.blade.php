@@ -1,4 +1,4 @@
-@extendes('layout.app')
+@extends('layouts.app')
 
 @section('content')
 <div class="bg-black py-5">

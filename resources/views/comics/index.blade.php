@@ -16,11 +16,12 @@
              <div class="row">
                  @foreach($comics as $comic)
                 <div class="col-4">
-                    <a href="{route('comics.show', ['comic' => $comic->id]}}"></a>
+                    <a href="{{ route('comics.show', ['comic' => $comic->id]) }}">
                         <div class="thumbnail d-flex justify-content-center">
                             <img src="{{ $comic['thumb'] }}" alt="">
                         </div>
                         <h2 class="text-center">{{ $comic['title'] }}</h2>
+                    </a>
                 </div>
                 @endforeach  
              </div>
