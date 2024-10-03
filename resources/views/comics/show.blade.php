@@ -4,7 +4,7 @@
 <div class="bg-black py-5">
          <div class="container">
              <div class="row">
-                <div class="col-4">
+                <div class="col-12">
                         <div class="thumbnail d-flex justify-content-start">
                             <img src="{{ $comic['thumb'] }}" alt="" class="img-fluid">
                         </div>

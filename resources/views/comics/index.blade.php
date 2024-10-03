@@ -16,6 +16,7 @@
              <div class="row">
                  @foreach($comics as $comic)
                 <div class="col-4">
+                    <a href="{route('comics.show', ['comic' => $comic->id]}}"></a>
                         <div class="thumbnail d-flex justify-content-center">
                             <img src="{{ $comic['thumb'] }}" alt="">
                         </div>
