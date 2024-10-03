@@ -5,7 +5,7 @@
             <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
             <ul class="list-unstyled d-flex mb-0">
                 <li class="mx-3">CHARACTERS</li>
-                <li class="mx-3">COMICS</li>
+                <li class="mx-3"><a href="{{ route('comics.index') }}">COMICS</a></li>
                 <li class="mx-3">MOVIES</li>
                 <li class="mx-3">TV</li>
                 <li class="mx-3">GAMES</li>
