@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -17,11 +18,10 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('thumb');
-            $table->decimal('price', 4, 2);
+            $table->text('thumb');
+            $table->string('price', 8,);
             $table->date('sale_date');
             $table->string('type');
-            $table->string('artists');
             $table->timestamps();
         });
     }
