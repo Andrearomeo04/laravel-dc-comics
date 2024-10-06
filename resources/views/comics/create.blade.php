@@ -27,6 +27,9 @@
                         <label for="" class="control-label"></label>
                         <input type="text" name="title" class="form-control" placeholder="sale date">
                     </div>
+                    <div class="col-12">
+                        <button type="submit">salva</button>
+                    </div>
                 </div>
             </form>
         </div>
