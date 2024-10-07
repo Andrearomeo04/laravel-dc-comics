@@ -38,6 +38,16 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required|max:255',
+            'description' => 'required|max:255',
+            'thumb' => 'max:255',
+            'price' => 'required|max:8',
+            'sale_date' => 'required|date',
+            'type' => 'required|max:255',
+            
+        ]);
+
         $form_data = $request->$all();
 
         $new_comic = new Comic();
@@ -95,6 +105,8 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }
